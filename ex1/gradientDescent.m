@@ -13,22 +13,6 @@ for iter = 1:num_iters
     loss = pred - y; % calculate loss
     gradient = (X' * loss) / m;
     theta = theta - (alpha * gradient);
-  
-    % ====================== YOUR CODE HERE ======================
-    % Instructions: Perform a single gradient step on the parameter vector
-    %               theta. 
-    %
-    % Hint: While debugging, it can be useful to print out the values
-    %       of the cost function (computeCost) and gradient here.
-    %
-
-
-
-
-
-
-
-    % ============================================================
 
     % Save the cost J in every iteration    
     J_history(iter) = computeCost(X, y, theta);
